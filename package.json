@@ -1,0 +1,20 @@
+{
+  "name": "angular-simditor",
+  "version": "0.0.2",
+  "description": "Angular Simditor",
+  "main": "src/component.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/projecao/angular-simditor.git"
+  },
+  "keywords": [],
+  "author": "Antério Vieria <anteriovieira@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projecao/angular-simditor/issues"
+  },
+  "homepage": "https://github.com/projecao/angular-simditor#readme"
+}
