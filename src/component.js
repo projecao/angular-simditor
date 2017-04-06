@@ -4,7 +4,7 @@ import * as angular from 'angular'
 var modSimditor = angular.module('angular-simditor', [])
 
 var TOOLBAR_DEFAULT = [
-    'title', 'bold', 'italic', 'underline', 
+    'title', 'bold', 'italic', 'underline', 'alignments',
     'strikethrough', '|', 'ol', 'ul', 'blockquote', 
     'code', 'table', '|', 'link', 'image', 'hr', 
     '|', 'indent', 'outdent'
@@ -116,21 +116,19 @@ modSimditor
 
     this.$get = function()
     {
-        class ngSimditor {
-            constructor (config) {
-                this.config = config
-            }
+        return {
 
-            configure(config){
-                this.config = config
-            }
+            config: this.defaultConfig,
 
-            setToolbar(toolbar){
+            configure: function (config){
+                this.config = config
+            },
+
+            setToolbar: function(toolbar){
                 this.config.toolbar = toolbar || []
             }
         }
 
-        return new ngSimditor( this.defaultConfig )
     }
 
 })
